@@ -1,12 +1,18 @@
 import React from 'react';
-import About from './Components/About';
+import About from './Components/About/About.js';
+import Nav from './Components/Nav/Nav.js';
 // import './App.css';
 
 function App() {
   return (
-    <main>
-  <About />
+    
+      <div>
+      <Nav></Nav>
+      
+      <main>
+  <About></About>
   </main>
+  </div>
   );
 }
 

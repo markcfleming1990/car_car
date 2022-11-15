@@ -1,6 +1,6 @@
 import React from 'react'
 
-export About() {
+function About() {
   return (
     <section>
     <div>About</div>
