@@ -1,20 +1,18 @@
-import React from "react";
+import React from 'react';
+// import { link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <div className='w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
-      <div className='px-2 flex justify-between items-center w-full h-full'>
-        <h1 className='text-3xl'>Car Car Used Cars</h1>
-        <div className='grid justify-items-end'>
-          <div className='flex'>
-            <ul className='justify-end w-32'>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Inventory</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div className='flex justify-between items-center h-[80px] px-4 bg-zinc-200 w-screen drop-shadow-lg'>
+    <div>
+      <h1 className='text-3xl mr-4 font-bold'>Car Car Used Cars</h1>
+    </div>
+    <ul className='flex'>
+      <li className='p-4 hover:bg-zinc-600'>About</li>
+      <li className='p-4 hover:bg-zinc-600'>Contact</li>
+      <li className='p-4 hover:bg-zinc-600'>Trade in</li>
+      <li className='p-4 hover:bg-zinc-600'>Inventory</li>
+    </ul>
     </div>
   );
 };
