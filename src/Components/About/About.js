@@ -6,7 +6,7 @@ function About() {
     <div className='flex justify-evenly'>
       <h1 className='text-3xl py-2'> Welcome to Car Car Used Cars</h1>
     </div>
-    <div className='flex justify-center p-4'>
+    <div className='flex justify-center p-4 text-2xl'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
           condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
@@ -17,6 +17,10 @@ function About() {
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
         </p>
       </div>
+      <div className='grid grid-cols-1 px-4 py-16'>
+    <button className='rounded-full bg-slate-400 py-4 px-16 text-2xl'>About Us</button>
+      </div>
+
       </div>
   )
 }
