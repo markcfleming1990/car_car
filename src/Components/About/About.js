@@ -1,11 +1,15 @@
 import React from "react";
+import lifeplanning from '../../Assets/img/life_planning.png';
+import networking from '../../Assets/img/Networking.png';
+import customSolutions from '../../Assets/img/custom_soutions.png'
 
 function About() {
   return (
-    <div className="flex flex-col justify-center text-center w-auto h-[400px] p-60 bg-white">
-      <h1 className="text-3xl py-2"> Welcome to Car Car Used Cars</h1>
-      <div className="flex justify-center p-4 text-2xl">
-        <p>
+    <div className="flex justify-center text-center w-auto h-[100px] py-10 bg-white">
+      
+      <div className="grid grid-cols-1 justify-center">
+      <h1 className="text-2xl"> All in One Life Planning</h1>
+        <p className=''>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus
           ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam
@@ -17,10 +21,19 @@ function About() {
           ultricies mollis. In hac habitasse platea dictumst.
         </p>
       </div>
-      <div className="grid grid-cols-1 px-4 py-16">
-        <button className="rounded-full bg-slate-400 py-4 px-16 text-2xl">
-          About Us
-        </button>
+      <div className="grid grid-cols-3 gap-8 px-6 py-16">
+        <div>
+        <img src={lifeplanning} alt='grid about us' />
+          Life planning
+        </div>
+        <div>
+        <img src={networking} alt='grid about us' />
+          Business Networking
+        </div>
+        <div>
+        <img src={customSolutions} alt='grid about us' />
+          Custom Solutions
+        </div>
       </div>
     </div>
   );
