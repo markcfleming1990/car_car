@@ -3,7 +3,7 @@
 import Nav from './Components/Nav/Nav.js';
 import Jumbotron from './Components/Jumbotron/Jumbotron.js';
 import About from './Components/About/About.js';
-import Values from './Components/Values/Values.js';
+import Subs from './Components/Values/Values.js';
 // import ContactForm from './Components/Contact/Contact.js';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <Nav />
     <Jumbotron />
     <About />
-    <Values />
+    <Subs />
     </div>
   );
 }
