@@ -9,11 +9,11 @@ function About() {
       
       <div className="grid grid-cols-2 justify-center">
         <div>
-      <h1 className="text-2xl"> All in One Life Planning</h1>
+      <h1 className="text-3xl text-center"> All in One Life Planning</h1>
       <h2>Lorem ipsum dolor sit amet, consectetur</h2>
       </div>
       <div>
-        <p className='text-left'>
+        <p className='text-2xl text-left py-5'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus
           ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam

@@ -4,9 +4,10 @@ import background from '../../Assets/img/background.png'
 
  function Jumbotron() {
   return (
+    // add senior pictures
     <div className='grid grid-cols-3 gap-4 content-center'>
     <div className='w-screen h-400'>
-    <img src={background} className='w-screen h-screen'alt="cover" />
+    <img src={background} className='object-cover'alt="cover" />
        {/* <h1 className='flex justify-evenly text-3xl font-bold py-20'>
          Resources all in one place!
        </h1> */}

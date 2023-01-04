@@ -8,12 +8,12 @@ const Nav = () => {
       <h1 className='text-3xl font-bold'>Faith & Family Resources</h1>
     </div>
     <ul className='flex'>
-      <button className='p-4 hover:bg-zinc-600'>About Us</button>
-      <button className='p-4 hover:bg-zinc-600'>Contact Us</button>
-      <button className='p-4 hover:bg-zinc-600'>Information</button>
-      <button className='p-4 hover:bg-zinc-600'>Partners</button>
-      <button className='p-4 hover:bg-zinc-600'>Sign In</button>
-      <button className='rounded-full py-2 bg-slate-700 hover:bg-zinc-600'>Sign Up</button>
+      <button className='p-4 hover:opacity-25'>About Us</button>
+      <button className='p-4 hover:opacity-25'>Contact Us</button>
+      <button className='p-4 hover:opacity-25'>Information</button>
+      <button className='p-4 hover:opacity-25'>Partners</button>
+      <button className='p-4 hover:opacity-25'>Sign In</button>
+      <button className='rounded-full py-2 bg-slate-700 hover:opacity-25 w-20'>Sign Up</button>
     </ul>
     </div>
   );
