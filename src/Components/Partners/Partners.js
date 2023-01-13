@@ -12,21 +12,21 @@ function Partners() {
       </div> */}
       <div className="grid grid-cols-4 py-[60px] items-center">
         <h1 className="flex justify-center p-10 col-span-4 items-center text-3xl">LOCAL PARTNERS FOR ALL ASPECTS OF LIFE</h1>
-        <div className="border-solid border-2 p-2 px-6">
-        <img src={Insurance} className='object-contain'alt="Insurance" />
-          <button>Insurance</button>
+        <div className="flex relative border-solid border-2 p-auto">
+        <img src={Insurance} className='relative'alt="Insurance" />
+          <h1 className='absolute bottom-1 left-1 text-white text-2xl content-center'>Insurance</h1>
         </div>
-        <div className="border-solid border-2 py-4 px-16">
-        <img src={Legal} className='object-cover'alt="Legal" />
-          <button>Legal</button>
+        <div className="flex relative border-solid border-2 p-auto">
+        <img src={Legal} className='relative'alt="Legal" />
+          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Legal</h1>
         </div>
-        <div className="border-solid border-2 p-4">
+        <div className="flex relative border-solid border-2 p-auto">
           <img src={Home} className='' alt='Home Improvement' />
-          <button>Home Improvement</button>
+          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Home Improvement</h1>
         </div>
-        <div className="border-solid border-2 py-4 px-12">
+        <div className="flex relative border-solid border-2 p-auto">
         <img src={Life} className='' alt='Life Style' />
-          <button>Life Style</button>
+          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Life Style</h1>
         </div>
       </div>
     </div>
