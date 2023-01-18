@@ -5,6 +5,7 @@ import Jumbotron from './Components/Jumbotron/Jumbotron.js';
 import About from './Components/About/About.js';
 import Partners from './Components/Partners/Partners.js';
 // import ContactForm from './Components/Contact/Contact.js';
+import Donations from './Components/Donations/Donations.js'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Jumbotron />
     <About />
     <Partners />
+    <Donations />
     </div>
   );
 }
