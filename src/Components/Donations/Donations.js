@@ -11,6 +11,7 @@ function Donation() {
       <div>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
       </div>
+      <button>Learn More</button>
     </div>
   )
 }
