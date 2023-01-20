@@ -14,19 +14,19 @@ function Partners() {
         <h1 className="flex justify-center p-10 col-span-4 items-center text-3xl">LOCAL PARTNERS FOR ALL ASPECTS OF LIFE</h1>
         <div className="flex relative border-solid border-2 p-auto">
         <img src={Insurance} className='relative'alt="Insurance" />
-          <h1 className='absolute bottom-1 left-1 text-white text-2xl content-center'>Insurance</h1>
+          <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black= text-3xl content-center'>Insurance</h1>
         </div>
         <div className="flex relative border-solid border-2 p-auto">
         <img src={Legal} className='relative'alt="Legal" />
-          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Legal</h1>
+          <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-3xl'>Legal</h1>
         </div>
         <div className="flex relative border-solid border-2 p-auto">
           <img src={Home} className='' alt='Home Improvement' />
-          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Home Improvement</h1>
+          <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-Black text-3xl'>Home Improvement</h1>
         </div>
         <div className="flex relative border-solid border-2 p-auto">
         <img src={Life} className='' alt='Life Style' />
-          <h1 className='absolute bottom-1 left-1 text-white text-2xl'>Life Style</h1>
+          <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-3xl'>Life Style</h1>
         </div>
       </div>
     </div>

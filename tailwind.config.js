@@ -4,6 +4,11 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    colors: {
+      blue: '#0C2340',
+      gold: '#C99700',
+      green: '#00843D'
+    },
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }
