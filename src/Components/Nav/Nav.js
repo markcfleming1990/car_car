@@ -3,11 +3,11 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <div className='flex justify-between items-center px-4 w-screen drop-shadow-lg'>
+    <div className='flex justify-between items-center px-4 w-screen bg-blue'>
     <div>
-      <h1 className='text-3xl font-bold'>Faith & Family Resources</h1>
+      <h1 className='text-3xl font-bold text-gold'>Senior Resource Network</h1>
     </div>
-    <ul className='flex'>
+    <ul className='flex text-gold'>
       <button className='p-4 hover:opacity-25'>About Us</button>
       <button className='p-4 hover:opacity-25'>Contact Us</button>
       <button className='p-4 hover:opacity-25'>Information</button>
