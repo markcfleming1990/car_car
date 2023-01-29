@@ -4,7 +4,7 @@ import Icon from "../../Assets/img/jumbo_bg.png";
 function Jumbotron() {
   return (
     // add senior pictures
-    <div className="grid grid-cols-3 gap-4 content-center">
+    <div className="grid grid-cols-3 gap-4 content-center bg-blue">
       <div className="w-screen h-200">
         <img
           src={Icon}
@@ -17,7 +17,7 @@ function Jumbotron() {
             <p className="text-gold">
               Bringing peace of mind to those that matter the most
             </p>
-            <div classname="flex space-x-4 p-2">
+            <div classname="flex space-x-4 p-2 gap-4">
               <button className="rounded-full px-2 bg-green text-black">
                 Request Information
               </button>
