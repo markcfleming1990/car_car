@@ -15,7 +15,7 @@ function Jumbotron() {
           <div className="text-4xl py-30 px-20 absolute bottom-[70px]">
             <h1 className="text-gold">Senior Resource Network</h1>
             <p className="text-gold">
-              Bringing peace of mind to those that matter the most
+              When you need a Trusted, Local Professional
             </p>
             <div classname="flex space-x-4 p-2 gap-4">
               <button className="rounded-full px-2 bg-green text-black">
