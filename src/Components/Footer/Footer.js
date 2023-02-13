@@ -1,16 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Footer() {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
   return (
     <div>
       <footer className="grid grid-cols-3 gap-2 content-start bg-green p-[60px]">
         <div className="rounded text-center text-gold p-auto">
           <h1 className="text-2xl">Contact Us</h1>
-          <label class="block">
-            <span class="text-blue">Full Name</span>
-            <input
-              type="text"
-              class="
+          <form onSubmit={handleSubmit}>
+            <label class="block">
+              <span class="text-blue">Full Name</span>
+              <input
+                type="text"
+                class="
                     mt-1
                     block
                     w-full
@@ -19,14 +41,14 @@ function Footer() {
                     border-transparent
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
-              placeholder="John Doe"
-            />
-          </label>
-          <label class="block">
-            <span class="text-blue">Email address</span>
-            <input
-              type="email"
-              class="
+                placeholder="John Doe"
+              />
+            </label>
+            <label class="block">
+              <span class="text-blue">Email address</span>
+              <input
+                type="email"
+                class="
                     mt-1
                     block
                     w-full
@@ -35,13 +57,13 @@ function Footer() {
                     border-transparent
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
-              placeholder="john@example.com"
-            />
-          </label>
-          <label class="block">
-            <span class="text-blue">Additional details</span>
-            <textarea
-              class="
+                placeholder="john@example.com"
+              />
+            </label>
+            <label class="block">
+              <span class="text-blue">Additional details</span>
+              <textarea
+                class="
                     mt-1
                     block
                     w-full
@@ -50,11 +72,14 @@ function Footer() {
                     border-transparent
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
-              rows="3"
-              placeholder="Place questions here"
-            ></textarea>
-          </label>
-          <button className="rounded bg-blue m-2 p-2">Submit</button>
+                rows="3"
+                placeholder="Place questions here"
+              ></textarea>
+            </label>
+            <button className="rounded bg-blue m-2 p-2" type="Submit">
+              {status}
+            </button>
+          </form>
         </div>
 
         <div className="text-center">
