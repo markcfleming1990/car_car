@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer className="grid grid-cols-3 content-start bg-green p-[60px]">
+      <footer className="grid grid-cols-3 gap-2 content-start bg-green p-[60px]">
         <div className="rounded text-center text-gold p-auto">
           <h1 className="text-2xl">Contact Us</h1>
           <label class="block">
@@ -19,7 +19,7 @@ function Footer() {
                     border-transparent
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
-              placeholder=""
+              placeholder="John Doe"
             />
           </label>
           <label class="block">
@@ -51,8 +51,10 @@ function Footer() {
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
               rows="3"
+              placeholder="Place questions here"
             ></textarea>
           </label>
+          <button className="rounded bg-blue m-2 p-2">Submit</button>
         </div>
 
         <div className="text-center">
@@ -81,6 +83,9 @@ function Footer() {
             <p>South Bend, IN 46628</p>
             <p>877-324-8490</p>
           </div>
+        </div>
+        <div className="flex items-end text-center">
+          <p>Made with ❤️ by MF Designs </p>
         </div>
       </footer>
     </div>
