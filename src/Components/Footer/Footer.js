@@ -1,33 +1,36 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 function Footer() {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+
+    emailjs
+      .sendForm(
+        "service_k3riwe9",
+        "test_template",
+        e.target,
+        "uN27GwZC7oXU9NF4h"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
+
   return (
     <div>
       <footer className="grid grid-cols-3 gap-2 content-start bg-green p-[60px]">
         <div className="rounded text-center text-gold p-auto">
           <h1 className="text-2xl">Contact Us</h1>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
             <label class="block">
               <span class="text-blue">Full Name</span>
               <input
@@ -42,6 +45,7 @@ function Footer() {
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
                 placeholder="John Doe"
+                name="fullName"
               />
             </label>
             <label class="block">
@@ -58,6 +62,7 @@ function Footer() {
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
                 placeholder="john@example.com"
+                name="emailAddress"
               />
             </label>
             <label class="block">
@@ -74,10 +79,15 @@ function Footer() {
                   "
                 rows="3"
                 placeholder="Place questions here"
+                name="message"
               ></textarea>
             </label>
-            <button className="rounded bg-blue m-2 p-2" type="Submit">
-              {status}
+            <button
+              className="rounded bg-blue m-2 p-2"
+              type="Submit"
+              value="Send"
+            >
+              Submit
             </button>
           </form>
         </div>
