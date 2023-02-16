@@ -8,10 +8,10 @@ function About() {
     <div className="grid grid-cols-2 bg-blue">
       <h1 className="col-span-2 text-center text-3xl text-gold">Our Mission</h1>
       <p className="col-span-2 text-center text-2xl text-gold">
-        Started with the visionary mind of Maria Tanksley in South Bend as a way
-        of helping local seniors, our motto "When local matters the most" is
-        more than just a sales pitch but a mission statement, When you need a
-        Trusted local professional come to us first.
+        At Senior Resource Network re refer trusted local professionals to our
+        senior community. Our network consits of various service providers
+        offering services in a variety of different areas including Medical,
+        Financial, Legal, Home&Auto and Personal services to meet your needs.
       </p>
     </div>
   );
