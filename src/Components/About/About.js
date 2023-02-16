@@ -11,7 +11,7 @@ function About() {
         At Senior Resource Network re refer trusted local professionals to our
         senior community. Our network consits of various service providers
         offering services in a variety of different areas including Medical,
-        Financial, Legal, Home&Auto and Personal services to meet your needs.
+        Financial, Legal, Home & Auto and Personal services to meet your needs.
       </p>
     </div>
   );
