@@ -1,36 +1,29 @@
+// import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const Nav = () => {
-  return (
-    <div className="flex justify-between items-center px-6 w-screen drop-shadow-lg bg-blue">
-      <nav>
-        <link to="/">Senior Resource Network</link>
+  // const [togglerNav, setTogglerNav] = useState(false);
 
-        <ul className="flex text-gold drop-shadow-md">
-          <CustomLink to="/about">About Us </CustomLink>
-          <CustomLink to="/partners">Partners</CustomLink>
-          <CustomLink to="/resources">Resources</CustomLink>
-          <CustomLink to="/team">Meet Our Team</CustomLink>
-          {/* <button className='p-4 hover:opacity-25'>Sign In</button>
-      <button className='rounded-full py-2 bg-slate-700 hover:opacity-25 w-20'>Sign Up</button> */}
+  // const clickHandler = () => {
+  //   setTogglerNav(!togglerNav);
+  // };
+
+  return (
+    <div className="flex justify-between items-center py-6 w-screen drop-shadow-lg bg-blue">
+      <Link to="/">
+        <h1 className="text-gold text-2xl">Senior Resource Network</h1>
+      </Link>
+      <nav>
+        <ul className="flex flex-row gap-4 text-gold drop-shadow-md">
+          <NavLink to="/about">About Us </NavLink>
+          <NavLink to="/partners">Partners</NavLink>
+          <NavLink to="/resources">Resources</NavLink>
+          <NavLink to="/team">Meet Our Team</NavLink>
         </ul>
       </nav>
     </div>
   );
 };
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
 
 export default Nav;

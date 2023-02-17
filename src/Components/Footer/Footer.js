@@ -116,6 +116,7 @@ function Footer() {
           <div className="text-blue text-center">
             <p>1657 Commerce Dr Suite 7B3</p>
             <p>South Bend, IN 46628</p>
+            <p>seniorresourcenet@gmail.com</p>
             <p>877-324-8490</p>
           </div>
         </div>
