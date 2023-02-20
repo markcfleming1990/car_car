@@ -23,9 +23,8 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/team" element={<Team />} />
       </Routes>
-      {/* <Jumbotron /> */}
-      {/* <About />
-      <Donations /> */}
+      <About />
+      {/* <Donations /> */}
       <Footer />
     </div>
   );

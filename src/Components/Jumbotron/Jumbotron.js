@@ -3,39 +3,23 @@ import Icon from "../../Assets/img/jumbo_bg.png";
 
 function Jumbotron() {
   return (
-    // add senior pictures
-    <div className="grid grid-cols-3 gap-4 content-center bg-blue">
-      <div className="w-screen h-200">
-        <img
-          src={Icon}
-          className=" flex w-screen h-90 backdrop-opacity-90 relative"
-          alt="senior resource icon"
-        />
-        <div className="grid cols-3 gap-2 m-2">
-          <div className="text-4xl py-30 px-20 absolute bottom-[70px]">
-            <h1 className="text-gold">Senior Resource Network</h1>
-            <p className="text-gold">
-              When you need a Trusted, Local Professional
-            </p>
-            <div classname="flex space-x-4 p-2 gap-4">
-              <button className="rounded-full px-2 bg-green text-black">
-                Request Information
-              </button>
-              <button className="rounded-full px-2 bg-green text-black">
-                Donate
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* <img src={background} className='object-cover'alt="cover" /> */}
-        {/* <h1 className='flex justify-evenly text-3xl font-bold py-20'>
-         Resources all in one place!
-       </h1> */}
-
-        <div className="grid grid-cols-3 gap-8 px-4 py-16">
-          {/* <button className='rounded-full bg-white py-4 text-2xl'>About Us</button>
-    <button className='rounded-full bg-white py-4 text-2xl'>Information</button>
-    <button className='rounded-full bg-white text-2xl'>Our Partners</button> */}
+    <div className="relative bg-blue">
+      <img
+        src={Icon}
+        className="w-full h-full object-cover object-center backdrop-opacity-90 filter brightness-75"
+        alt="senior resource icon"
+      />
+      <div className="absolute inset-[189px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
+        <p className="text-gold mb-8 text-4xl">
+          When you need a Trusted, Local Professional
+        </p>
+        <div className="flex justify-center space-x-4">
+          <button className="rounded-full py-2 px-6 bg-green text-black">
+            Request Information
+          </button>
+          <button className="rounded-full py-2 px-6 bg-green text-black">
+            Donate
+          </button>
         </div>
       </div>
     </div>
