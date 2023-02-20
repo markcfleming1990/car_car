@@ -9,8 +9,8 @@ import Partners from "./pages/partners.js";
 
 import Jumbotron from "./Components/Jumbotron/Jumbotron.js";
 import Nav from "./Components/Nav/Nav.js";
+// import Donations from "./Components/Donations/Donations.js";
 import Footer from "./Components/Footer/Footer.js";
-import Donations from "./Components/Donations/Donations.js";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
         <Route path="/team" element={<Team />} />
       </Routes>
       {/* <Jumbotron /> */}
-      <About />
-      <Donations />
+      {/* <About />
+      <Donations /> */}
       <Footer />
     </div>
   );
