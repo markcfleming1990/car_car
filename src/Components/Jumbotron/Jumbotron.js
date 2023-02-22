@@ -3,14 +3,14 @@ import Icon from "../../Assets/img/jumbo_bg.png";
 
 function Jumbotron() {
   return (
-    <div className="relative w-screen bg-blue">
+    <div className="relative w-screen h-auto bg-blue">
       <img
         src={Icon}
-        className="w-screen h-screen object-cover object-center backdrop-opacity-90 filter brightness-75 max-h-screen"
+        className="w-screen h-auto object-cover object-center backdrop-opacity-90 filter brightness-75 max-h-screen"
         alt="senior resource icon"
       />
-      <div className="absolute inset-x-0 bottom-[450px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
-        <p className="text-gold mb-8 text-4xl">
+      <div className="absolute inset-x-0 bottom-[300px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
+        <p className="text-gold mb-2 text-4xl">
           When you need a Trusted, Local Professional
         </p>
         <div className="flex justify-center space-x-4">
@@ -22,7 +22,7 @@ function Jumbotron() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 bg-blue w-screen mt-10">
+      {/* <div className="grid grid-cols-2 bg-blue w-screen mt-10">
         <h1 className="col-span-2 text-center text-3xl text-gold">
           Our Mission
         </h1>
@@ -33,7 +33,7 @@ function Jumbotron() {
           Medical, Financial, Legal, Home & Auto, and Personal services to meet
           your needs.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

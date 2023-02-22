@@ -9,11 +9,10 @@ function Donation() {
   ];
 
   return (
-    <div className="px-4 py-8 rounded-lg border-2 border-green-500 bg-green-50">
-      <h1 className="text-3xl font-bold text-center mb-6">Donations</h1>
+    <div className="px-4 py-8 w-screen h-auto border-green-500 bg-blue text-gold border-blue">
+      <h1 className="text-3xl font-bold text-center mb-6">Become a Donor</h1>
       <div className="flex justify-center mb-8">
         <div className="w-2/3 md:w-1/2 lg:w-1/3">
-          <h2 className="text-xl font-bold mb-2">Become a Donor</h2>
           <p className="text-gray-700 mb-4">
             Select an amount to donate and click the button below:
           </p>
@@ -21,7 +20,7 @@ function Donation() {
             {donationOptions.map((option, index) => (
               <button
                 key={index}
-                className="px-4 py-2 text-lg font-semibold text-black rounded-md border-2 border-gray-700 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+                className="px-4 py-2 text-lg font-semibold  rounded-md border-gray-700 bg-green hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
               >
                 {option.amount}
               </button>

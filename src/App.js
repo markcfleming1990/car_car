@@ -4,12 +4,13 @@ import { Route, Routes } from "react-router-dom";
 // import Home from "./pages/home.js";
 import Resources from "./pages/resources.js";
 import Team from "./pages/team.js";
-import About from "./pages/about.js";
+// import About from "./pages/about.js";
 import Partners from "./pages/partners.js";
 
 import Jumbotron from "./Components/Jumbotron/Jumbotron.js";
+import About from "./Components/About/About.js";
 import Nav from "./Components/Nav/Nav.js";
-// import Donations from "./Components/Donations/Donations.js";
+import Donations from "./Components/Donations/Donations.js";
 import Footer from "./Components/Footer/Footer.js";
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/team" element={<Team />} />
       </Routes>
-      {/* <About /> */}
-      {/* <Donations /> */}
+      <About />
+      <Donations />
+
       <Footer />
     </div>
   );
