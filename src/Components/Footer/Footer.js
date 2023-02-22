@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { NavLink } from "react-router-dom";
 import emailjs from "emailjs-com";
 
 function Footer() {
@@ -26,7 +27,7 @@ function Footer() {
   };
 
   return (
-    <div>
+    <div className="w-screen">
       <footer className="grid grid-cols-3 gap-2 content-start bg-green p-[60px]">
         <div className="rounded text-center text-gold p-auto">
           <h1 className="text-2xl">Contact Us</h1>
@@ -94,19 +95,15 @@ function Footer() {
 
         <div className="text-center">
           <h1 className="text-2xl text-gold">Menu</h1>
-          <div className="text-blue grid grid-rows-4 gap-2">
-            <div>
-              <button>Home</button>
-            </div>
-            <div>
-              <button>About Us</button>
-            </div>
-            <div>
-              <button>Partners</button>
-            </div>
-            <div>
-              <button>Donations</button>
-            </div>
+          <div className="">
+            <nav>
+              <ul className="text-blue grid grid-rows-4 gap-2">
+                <NavLink to="/about">About Us </NavLink>
+                <NavLink to="/partners">Partners</NavLink>
+                <NavLink to="/resources">Resources</NavLink>
+                <NavLink to="/team">Meet Our Team</NavLink>
+              </ul>
+            </nav>
           </div>
         </div>
         <div>
