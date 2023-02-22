@@ -2,17 +2,17 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 // import Home from "./pages/home.js";
-import Resources from "./pages/resources.js";
-import Team from "./pages/team.js";
+import Resources from "./src/pages/resources.js";
+import Team from "./src/pages/team.js";
 // import About from "./pages/about.js";
 // import Partners from "./pages/partners.js";
 
-import Jumbotron from "./Components/Jumbotron/Jumbotron.js";
-import About from "./Components/About/About.js";
-import Nav from "./Components/Nav/Nav.js";
-import Donations from "./Components/Donations/Donations.js";
-import Partners from "./Components/Partners/Partners.js";
-import Footer from "./Components/Footer/Footer.js";
+import Jumbotron from "./src/Components/Jumbotron/Jumbotron.js";
+import About from "./src/Components/About/About.js";
+import Nav from "./src/Components/Nav/Nav.js";
+import Donations from "./src/Components/Donations/Donations.js";
+import Partners from "./src/Components/Partners/Partners.js";
+import Footer from "./src/Components/Footer/Footer.js";
 
 function App() {
   return (
