@@ -1,25 +1,32 @@
 import React from "react";
-// import Insurance from "../../Assets/img/Insurance_Grid.png";
-// import Legal from "../../Assets/img/Legal_Grid.png";
-// import Personal from "../../Assets/img/personal_jpg.png";
-// import HomeAuto from "../../Assets/img/home_auto.png";
-// import Medical from "../../Assets/img/senior_medical.png";
+import { Link } from "react-router-dom";
 
 function Partners() {
+  const services = ["Medical", "Financial", "Legal", "Home & Auto", "Personal"];
+
   return (
-    <div className="flex justify-center py-40 bg-blue text-gold">
+    <div className="flex justify-center py-40 bg-blue text-gold w-screen">
       <div>
-        <h1 className="text-center text-3xl text-bold">
+        <h1 className="text-center text-3xl font-bold">
           Our Local Professionals helps service our Seniors in a variety of
           areas including:
         </h1>
-        <div className="text-center text-2xl text-bold p-4 m-2">
-          <ul>
-            <li>Insurance</li>
-            <li>Legal</li>
-            <li>Personal</li>
-            <li>Home & Auto</li>
-            <li>Medical</li>
+        <div className="flex justify-center text-center p-6 m-2">
+          <ul className="list-disc text-3xl">
+            {services.map((service) => (
+              <li key={service}>
+                {/* Pass the selected service as a query parameter */}
+                <Link
+                  to={{
+                    pathname: "/service-vendors",
+                    search: `?service=${service}`,
+                  }}
+                  className="underline hover:no-underline"
+                >
+                  {service}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
