@@ -9,7 +9,7 @@ function Jumbotron() {
         className="w-screen h-auto object-cover object-center backdrop-opacity-90 filter brightness-75 max-h-screen"
         alt="senior resource icon"
       />
-      <div className="absolute inset-x-0 bottom-[300px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
+      <div className="absolute inset-x-0 bottom-[200px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
         <p className="text-gold mb-2 text-4xl">
           When you need a Trusted, Local Professional
         </p>
