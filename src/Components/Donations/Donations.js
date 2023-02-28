@@ -1,16 +1,32 @@
 import React, { useState } from "react";
+import Modal from "../Modal/Index.js";
 
 function Donation() {
   const [showModal, setShowModal] = useState(false);
-  const [modalContent, setModalContent] = useState({
-    title: "",
-    icon: "",
-    text: "",
-  });
+  const [modalContent, setModalContent] = useState({ title: "", body: "" });
 
-  const handleLearnMoreClick = (content) => {
+  const handleClose = () => setShowModal(false);
+  const handleOpen = (title, body) => {
+    let content = body;
+    if (title === "Senior Smile Fund") {
+      content = (
+        <ul>
+          <li>Dental</li>
+          <li>Dentures &amp; Partials</li>
+          <li>X-rays</li>
+        </ul>
+      );
+    } else if (title === "Second Chance Fund") {
+      content = (
+        <ul>
+          <li>Empowerment &amp; Employment</li>
+          <li>Food</li>
+          <li>Housing</li>
+        </ul>
+      );
+    }
+    setModalContent({ title, body: content });
     setShowModal(true);
-    setModalContent(content);
   };
 
   return (
@@ -29,11 +45,10 @@ function Donation() {
         <button
           className="rounded-full py-2 px-6 bg-green text-gold"
           onClick={() =>
-            handleLearnMoreClick({
-              title: "Senior Smile Fund",
-              icon: "😀",
-              text: "The Senior Smile Fund is dedicated to helping seniors with their dental needs by covering outstanding costs for dental procedures in partnership with local dentists.",
-            })
+            handleOpen(
+              "Senior Smile Fund",
+              "This is information about the Senior Smile Fund."
+            )
           }
         >
           Learn More
@@ -49,41 +64,27 @@ function Donation() {
         <button
           className="rounded-full py-2 px-6 bg-green text-gold"
           onClick={() =>
-            handleLearnMoreClick({
-              title: "Second Chance Fund",
-              icon: "🤝",
-              text: "The Second Chance Fund is dedicated to helping individuals who are making the transition from incarceration to a normal life. The fund provides support and resources to help them make the transition successfully.",
-            })
+            handleOpen(
+              "Second Chance Fund",
+              "This is information about the Second Chance Fund."
+            )
           }
         >
           Learn More
         </button>
       </div>
-      <div>
+      <div className="">
         <p>
-          your donations go a long way towards helping our local senior
-          community
+          Your donations go a long way towards helping our local senior
+          community.
         </p>
       </div>
-
-      {/* Modal */}
       {showModal && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-          <div className="absolute w-full h-full bg-gray-900 opacity-50"></div>
-          <div className="bg-white rounded-lg w-1/2">
-            <div className="flex flex-col items-center justify-center p-8">
-              <div className="text-3xl">{modalContent.icon}</div>
-              <h2 className="text-2xl font-bold my-4">{modalContent.title}</h2>
-              <p>{modalContent.text}</p>
-              <button
-                className="rounded-full py-2 px-6 bg-green text-gold mt-4"
-                onClick={() => setShowModal(false)}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
+        <Modal
+          title={modalContent.title}
+          body={modalContent.body}
+          onClose={handleClose}
+        />
       )}
     </div>
   );
