@@ -9,7 +9,7 @@ function Modal(props) {
         <div className="flex justify-center mt-8">
           <button
             className="text-gold bg-green py-2 px-4 rounded-lg"
-            onClick={props.onClick}
+            onClick={props.onClose}
           >
             Close
           </button>
