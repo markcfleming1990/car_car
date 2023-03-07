@@ -20,7 +20,7 @@ const Nav = () => {
             <li key={link.path}>
               <NavLink
                 to={link.path}
-                className="hover:text-blue-100 hover:bg-gold rounded py-2 px-4"
+                className="hover:text-blue-100 hover:bg-gold rounded py-2 px-4 text-lg font-medium tracking-wider"
                 activeClassName="text-blue-100 bg-gold"
               >
                 {link.label}

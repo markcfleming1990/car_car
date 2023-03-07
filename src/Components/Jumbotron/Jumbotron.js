@@ -3,21 +3,24 @@ import Icon from "../../Assets/img/jumbo_bg.png";
 
 function Jumbotron() {
   return (
-    <div className="relative w-screen h-auto bg-blue">
+    <div className="relative w-screen h-screen overflow-hidden bg-blue">
       <img
         src={Icon}
-        className="w-screen h-auto object-cover object-center backdrop-opacity-90 filter brightness-75 max-h-screen"
+        className="w-full h-auto object-cover object-center absolute top-1/2 left-0 transform -translate-y-1/2 opacity-90"
         alt="senior resource icon"
       />
-      <div className="absolute inset-x-0 bottom-[200px] flex flex-col justify-end items-center text-center px-4 pb-12 lg:pb-32">
-        <p className="text-gold mb-2 text-6xl">
+      <div className="absolute inset-x-0 bottom-20 z-10 text-center text-gold p-6 lg:p-12">
+        <h1 className="text-4xl font-bold mb-4">
+          Empowering St. Joseph County's Seniors
+        </h1>
+        <p className="text-lg mb-6">
           When you need a Trusted, Local Professional
         </p>
-        <div className="flex justify-center space-x-4 mt-6">
-          <button className="rounded-full py-2 px-6 bg-green text-gold">
+        <div className="flex justify-center space-x-4">
+          <button className="rounded-full py-3 px-8 bg-green text-gold hover:bg-opacity-80 transition-colors duration-300">
             Request Information
           </button>
-          <button className="rounded-full py-2 px-6 bg-green text-gold">
+          <button className="rounded-full py-3 px-8 border-2 border-green text-green hover:text-white hover:bg-green transition-colors duration-300">
             Donate
           </button>
         </div>

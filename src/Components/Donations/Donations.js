@@ -13,60 +13,58 @@ function Donation() {
   };
 
   const generateBulletPoints = (points) => (
-    <ul>
+    <ul className="list-disc pl-8">
       {points.map((point, index) => (
         <li key={index}>{point}</li>
       ))}
     </ul>
   );
 
-  const seniorSmilePoints = ["Dental", "Dentures &amp; Partials", "X-rays"];
+  const seniorSmilePoints = ["Dental", "Dentures & Partials", "X-rays"];
 
-  const secondChancePoints = [
-    "Empowerment &amp; Employment",
-    "Food",
-    "Housing",
-  ];
+  const secondChancePoints = ["Empowerment & Employment", "Food", "Housing"];
 
   return (
-    <div className="grid grid-row-2 px-4 py-6 pt-12 w-screen gap-6 h-auto border-green-500 bg-blue text-gold border-blue">
-      <h1 className=" col-span-2 text-center text-3xl font-bold">
-        We at Senior Resources Network have a variety of funds to help our
-        Senior community in St. Joseph County.
-      </h1>
-      <div className="text-center text-2xl">
-        <h2 className="text-center text-3xl font-bold">Senior Smile Fund</h2>
-        <p className="text-left">
-          A fund designated to help assist seniors with their dental needs, we
-          work with local dentists to cover any outstanding costs for any dental
-          procedure.
-        </p>
-        <button
-          className="rounded-full py-2 px-6 bg-green text-gold"
-          onClick={() => handleOpen("Senior Smile Fund", seniorSmilePoints)}
-        >
-          Learn More
-        </button>
+    <div className="grid grid-cols-2 px-8 py-6 md:px-16 md:py-12 bg-blue text-gold">
+      <div className="flex flex-col justify-center">
+        <h1 className="text-4xl font-bold leading-tight mb-4">
+          We at Senior Resources Network have a variety of funds to help our
+          Senior community in St. Joseph County.
+        </h1>
+        <div className="mb-12">
+          <div className="text-3xl font-bold mb-2">Senior Smile Fund</div>
+          <p className="text-lg mb-4">
+            A fund designated to help assist seniors with their dental needs, we
+            work with local dentists to cover any outstanding costs for any
+            dental procedure.
+          </p>
+          <button
+            className="rounded-full py-2 px-6 bg-green text-gold"
+            onClick={() => handleOpen("Senior Smile Fund", seniorSmilePoints)}
+          >
+            Learn More
+          </button>
+        </div>
+        <div>
+          <div className="text-3xl font-bold mb-2">Second Chance Fund</div>
+          <p className="text-lg mb-4">
+            We at Senior Resource Network saw a need to help those making the
+            transition from incarceration to a normal life. The Second Chance
+            Fund is set up to help make the transition to a normal life.
+          </p>
+          <button
+            className="rounded-full py-2 px-6 bg-green text-gold"
+            onClick={() => handleOpen("Second Chance Fund", secondChancePoints)}
+          >
+            Learn More
+          </button>
+        </div>
       </div>
-      <div className="text-center text-2xl">
-        <h2 className="text-center text-3xl font-bold">Second Chance Fund</h2>
-        <p className="text-left">
-          We at Senior Resource Network saw a need to help those making the
-          transition from incarceration to a normal life. The Second Chance Fund
-          is set up to help make the transition to a normal life.
-        </p>
-        <button
-          className="rounded-full py-2 px-6 bg-green text-gold"
-          onClick={() => handleOpen("Second Chance Fund", secondChancePoints)}
-        >
-          Learn More
-        </button>
-      </div>
-      <div className="grid grid-row-2 justify-center">
-        <p>
+      <div className="flex flex-col justify-center">
+        <div className="text-lg mb-8">
           Your donations go a long way towards helping our local senior
           community.
-        </p>
+        </div>
         <button className="rounded-full py-2 px-12 bg-green text-gold">
           Donate
         </button>
