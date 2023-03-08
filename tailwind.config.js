@@ -26,5 +26,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require("/car_car/node_modules/@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms")],
 };
