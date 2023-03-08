@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/car_car/static/css/main.8aa13d0e.css",
+    "main.js": "/car_car/static/js/main.b2ad3f68.js",
+    "static/media/personal_jpg.png": "/car_car/static/media/personal_jpg.e36f9d20309a8bb1bae3.png",
+    "static/media/jumbo_bg.png": "/car_car/static/media/jumbo_bg.04e89aedfb2bebcacb3b.png",
+    "static/media/Maria_Team.png": "/car_car/static/media/Maria_Team.022160a6abb7b3f9ee67.png",
+    "index.html": "/car_car/index.html",
+    "main.8aa13d0e.css.map": "/car_car/static/css/main.8aa13d0e.css.map",
+    "main.b2ad3f68.js.map": "/car_car/static/js/main.b2ad3f68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa13d0e.css",
+    "static/js/main.b2ad3f68.js"
+  ]
+}
