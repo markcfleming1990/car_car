@@ -50,7 +50,7 @@ function ServiceVendors() {
         image: "https://via.placeholder.com/150",
       },
     ],
-    "": [
+    HomeAuto: [
       {
         name: "Home & Auto Vendor 1",
         phone: "555-1234",
@@ -83,16 +83,28 @@ function ServiceVendors() {
   const vendorList = vendors[service];
 
   return (
-    <div>
-      <h1>Vendors for {service}</h1>
+    <div className="bg-blue">
+      <h1 className="text-gold font-bold text-2xl text-center">
+        Vendors for {service}
+      </h1>
       {vendorList ? (
-        <ul>
+        <ul className="grid grid-cols-3 gap-2 justify-items-center">
           {vendorList.map((vendor) => (
             <li key={vendor.email}>
-              <img src={vendor.image} alt={vendor.name} />
-              <h2>{vendor.name}</h2>
-              <p>{vendor.phone}</p>
-              <p>{vendor.email}</p>
+              <div className="bg-white p-4">
+                <div className="flex justify-center">
+                  <img
+                    src={vendor.image}
+                    alt={vendor.name}
+                    width="200"
+                    height="200"
+                    className="w-32 h-32 object-cover rounded-full mb-2"
+                  />
+                </div>
+                <h2 className="text-gold mt-2">{vendor.name}</h2>
+                <p className="text-gold">{vendor.phone}</p>
+                <p className="text-gold">{vendor.email}</p>
+              </div>
             </li>
           ))}
         </ul>

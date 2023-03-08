@@ -60,15 +60,6 @@ function Donation() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-center">
-        <div className="text-lg mb-8">
-          Your donations go a long way towards helping our local senior
-          community.
-        </div>
-        <button className="rounded-full py-2 px-12 bg-green text-gold">
-          Donate
-        </button>
-      </div>
       {showModal && (
         <Modal
           title={modalContent.title}

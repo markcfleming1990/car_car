@@ -4,11 +4,11 @@ import Personal from "../../Assets/img/personal_jpg.png";
 
 function Partners() {
   const services = [
-    { name: "Medical", id: "medical" },
-    { name: "Financial", id: "financial" },
-    { name: "Legal", id: "legal" },
-    { name: "Home & Auto", id: "home-auto" },
-    { name: "Personal", id: "personal" },
+    { name: "Medical", id: "Medical" },
+    { name: "Financial", id: "Financial" },
+    { name: "Legal", id: "Legal" },
+    { name: "Home & Auto", id: "HomeAuto" },
+    { name: "Personal", id: "Personal" },
   ];
 
   return (
