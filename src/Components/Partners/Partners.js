@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import Personal from "../../Assets/img/personal_jpg.png";
 
 function Partners() {
-  const services = ["Medical", "Financial", "Legal", "Home & Auto", "Personal"];
+  const services = [
+    { name: "Medical", id: "medical" },
+    { name: "Financial", id: "financial" },
+    { name: "Legal", id: "legal" },
+    { name: "Home & Auto", id: "home-auto" },
+    { name: "Personal", id: "personal" },
+  ];
 
   return (
     <div className="py-20 bg-blue text-gold">
@@ -15,16 +21,16 @@ function Partners() {
             </h1>
             <ul className="text-2xl md:text-3xl space-y-2 md:space-y-4">
               {services.map((service) => (
-                <li key={service}>
+                <li key={service.id}>
                   {/* Pass the selected service as a query parameter */}
                   <Link
                     to={{
                       pathname: "/service-vendors",
-                      search: `?service=${service}`,
+                      search: `?service=${service.id}`,
                     }}
                     className="underline hover:no-underline"
                   >
-                    {service}
+                    {service.name}
                   </Link>
                 </li>
               ))}

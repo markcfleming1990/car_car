@@ -1,6 +1,5 @@
 import React from "react";
 import Maria from "../Assets/img/Maria_Team.png";
-import Anthony from "../Assets/img/Anthony_Trivet.png";
 
 const teamMembers = [
   {
@@ -9,28 +8,25 @@ const teamMembers = [
     email: "maria@email.com",
     img: Maria,
   },
-  {
-    name: "Anthony Trivet",
-    title: "Director of Partner Acquisitions",
-    email: "anthony@email.com",
-    img: Anthony,
-  },
 ];
 
 const TeamMember = ({ member }) => {
   return (
-    <div className="justify-center text-center px-4 md:px-0">
+    <div className="flex flex-col items-center justify-center text-center mb-12">
       <img
         src={member.img}
         alt={member.name}
         width="200"
         height="200"
-        className="w-48 h-48 object-cover rounded-full bg-auto mx-auto mb-4 md:mb-0 md:mx-0"
+        className="w-48 h-48 object-cover rounded-full mb-4"
       />
-      <div>
-        <p>{member.name}</p>
-        <p>{member.title}</p>
-        <p className="mb-4 md:mb-0">{member.email}</p>
+      <div className="flex flex-col items-center">
+        <p className="font-bold text-lg">{member.name}</p>
+        <p className="text-blue-100">{member.title}</p>
+        <p className="text-gold mb-4">{member.email}</p>
+        <button className="bg-green py-2 px-6 text-gold rounded-lg">
+          Contact Me
+        </button>
       </div>
     </div>
   );
@@ -38,14 +34,15 @@ const TeamMember = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="bg-blue h-screen w-screen text-gold grid grid-cols-1 md:grid-cols-2 justify-items-center py-12">
-      <h1 className="text-center text-3xl col-span-4">
+    <div className="bg-blue h-screen w-screen text-gold py-12">
+      <h1 className="text-center text-3xl mb-12">
         Our team is dedicated to bringing the best to our senior community
       </h1>
-
-      {teamMembers.map((member) => (
-        <TeamMember member={member} key={member.name} />
-      ))}
+      <div className="flex flex-wrap justify-center gap-12">
+        {teamMembers.map((member) => (
+          <TeamMember member={member} key={member.name} />
+        ))}
+      </div>
     </div>
   );
 };
