@@ -26,9 +26,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("tailwindcss"),
-    require("autoprefixer"),
-  ],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
