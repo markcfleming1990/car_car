@@ -32,5 +32,5 @@ module.exports = {
     extend: {},
   },
   variants: "all",
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
