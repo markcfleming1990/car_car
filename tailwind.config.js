@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "/public/*.html",
     "./src/components/**/*.{jsx,js}",
-    "./src/pages/**/*.{jsx,js",
+    "./src/pages/**/*.{jsx,js}",
   ],
   theme: {
     colors: {
