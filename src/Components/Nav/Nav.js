@@ -10,7 +10,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-blue-500 text-gold p-6 shadow-lg w-screen">
+    <nav className="flex items-center justify-between flex-wrap bg-blue text-gold p-6 shadow-lg w-screen">
       <Link to="/">
         <h1 className="text-2xl font-bold">Senior Resource Network</h1>
       </Link>
