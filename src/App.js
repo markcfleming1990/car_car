@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./index.css";
 // import Modal from "../src/Components/Modal/Index.js";
 import Jumbotron from "./Components/Jumbotron/Jumbotron.js";
 import About from "./Components/About/About.js";
