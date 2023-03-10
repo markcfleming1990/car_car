@@ -4,11 +4,8 @@
   "homepage": "http://markcfleming1990.github.io/car_car/",
   "private": true,
   "dependencies": {
-    "tailwindcss": "^3.2.7",
-    "autoprefixer": "^10.4.13",
-    "@tailwindcss/forms": "^0.5.3",
-    "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0",
+    
+    
     "@emailjs/browser": "^3.10.0",
     "@heroicons/react": "^2.0.15",
     "@testing-library/jest-dom": "^5.16.5",
@@ -51,6 +48,11 @@
     ]
   },
   "devDependencies": {
+    "tailwindcss": "^3.2.7",
+    "autoprefixer": "^10.4.13",
+    "@tailwindcss/forms": "^0.5.3",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "gh-pages": "^5.0.0"
   }
 }
