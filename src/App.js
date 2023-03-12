@@ -1,15 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-// import Modal from "../src/Components/Modal/Index.js";
-import Jumbotron from "./Components/Jumbotron/Jumbotron.js";
-import About from "./Components/About/About.js";
-import Nav from "./Components/Nav/Nav.js";
-import Donations from "./Components/Donations/Donations.js";
-import Partners from "./Components/Partners/Partners.js";
-import Footer from "./Components/Footer/Footer.js";
-import Resources from "./pages/resources.js";
-import Team from "./pages/team.js";
-import ServiceVendors from "./pages/serviceVendors.js";
+import Jumbotron from "./Components/Jumbotron/Jumbotron.jsx";
+import About from "./Components/About/About.jsx";
+import Nav from "./Components/Nav/Nav.jsx";
+import Donations from "./Components/Donations/Donations.jsx";
+import Partners from "./Components/Partners/Partners.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
+import Resources from "./pages/resources.jsx";
+import Team from "./pages/team.jsx";
+import ServiceVendors from "./pages/serviceVendors.jsx";
 
 function App() {
   return (
