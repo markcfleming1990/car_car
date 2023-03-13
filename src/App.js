@@ -34,9 +34,6 @@ function App() {
         {/* Add a new route that will display the vendors for a specific service */}
         <Route path="/service-vendors" element={<ServiceVendors />} />
       </Routes>
-      {/* <About /> */}
-      {/* <Donations /> */}
-      {/* <Partners /> */}
       <Footer />
     </div>
   );

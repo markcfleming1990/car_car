@@ -7,7 +7,7 @@ function Donation() {
       <div></div>
       <div>
         <div className="flex align-left"></div>
-        <div className="grid  grid-cols-8 grid-rows-2 gap-6 place-content-center p-20">
+        <div className="grid grid-cols-8 grid-rows-2 gap-6 place-content-center p-20">
           <h1 className="col-span-3 text-4xl">Become a Donor</h1>
           <button className="rounded border-2 border-black bg-gold">$10</button>
           <button className="rounded border-2 border-black bg-gold">$20</button>

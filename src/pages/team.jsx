@@ -22,7 +22,7 @@ const TeamMember = ({ member }) => {
       />
       <div className="flex flex-col items-center">
         <p className="font-bold text-lg">{member.name}</p>
-        <p className="text-blue-100">{member.title}</p>
+        <p className="text-blue">{member.title}</p>
         <p className="text-gold mb-4">{member.email}</p>
         <button className="bg-green py-2 px-6 text-gold rounded-lg">
           Contact Me
