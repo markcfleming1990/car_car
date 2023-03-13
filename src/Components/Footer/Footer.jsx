@@ -32,25 +32,25 @@ function Footer() {
         <div className="rounded text-center p-4">
           <h1 className="text-3xl mb-4">Contact Us</h1>
           <form ref={form} onSubmit={sendEmail}>
-            <label className="block mb-2">
+            <label className=" mb-2">
               <span className="text-blue">Full Name</span>
               <input
                 type="text"
-                className="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="John Doe"
                 name="fullName"
               />
             </label>
-            <label className="block mb-2">
+            <label className=" mb-2">
               <span className="text-blue">Email address</span>
               <input
                 type="email"
-                className="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="john@example.com"
                 name="emailAddress"
               />
             </label>
-            <label className="block mb-2">
+            <label className="mb-2">
               <span className="text-blue">Additional details</span>
               <textarea
                 className="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
