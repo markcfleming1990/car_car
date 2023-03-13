@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Personal from "../../Assets/img/personal_jpg.png";
+import Personal from "../../Assets/img/personal.png";
 
 function Partners() {
   const services = [
