@@ -25,6 +25,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {},
+    corePlugins: {
+      preflight: false,
+    },
   },
   variants: "all",
   plugins: [require("tailwindcss"), require("autoprefixer")],
