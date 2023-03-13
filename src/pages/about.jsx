@@ -1,7 +1,4 @@
 import React from "react";
-// import lifeplanning from '../../Assets/img/life_planning.png';
-// import networking from '../../Assets/img/Networking.png';
-// import customSolutions from '../../Assets/img/custom_soutions.png'
 
 function About() {
   return (
