@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../Modal/Index.js";
+import Modal from "../Modal/Index.jsx";
 
 function Donation() {
   const [showModal, setShowModal] = useState(false);
