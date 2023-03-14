@@ -36,7 +36,7 @@ function Footer() {
               <span className="text-blue">Full Name</span>
               <input
                 type="text"
-                className="mt-1  w-full rounded-md bg-blue border-transparent focus:border-blue focus:bg-green focus:ring-0"
+                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="John Doe"
                 name="fullName"
               />
@@ -45,7 +45,7 @@ function Footer() {
               <span className="text-blue">Email address</span>
               <input
                 type="email"
-                className="mt-1  w-full rounded-md bg-blue border-transparent focus:border-blue focus:bg-green focus:ring-0"
+                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="john@example.com"
                 name="emailAddress"
               />
@@ -53,7 +53,7 @@ function Footer() {
             <label className="mb-2">
               <span className="text-blue">Additional details</span>
               <textarea
-                className="mt-1 block w-full rounded-md bg-blue border-transparent focus:border-blue focus:bg-green focus:ring-0"
+                className="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 rows="3"
                 placeholder="Place questions here"
                 name="message"
