@@ -29,7 +29,7 @@ function Footer() {
   return (
     <div className="w-screen">
       <footer className="grid grid-cols-3 gap-2 content-start bg-green p-8 text-gold">
-        <div className="rounded text-center p-4">
+        <div className="text-3xl mb-4 text-center">
           <h1 className="text-3xl mb-4">Contact Us</h1>
           <form ref={form} onSubmit={sendEmail}>
             <label className=" mb-2">
