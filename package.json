@@ -1,7 +1,7 @@
 {
   "name": "car_car",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://markcfleming1990.github.io/car_car/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
