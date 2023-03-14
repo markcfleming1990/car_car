@@ -1,13 +1,15 @@
+const path = require("path");
 const express = require("express");
-const router = express.Router();
-const cors = require("cors");
-const nodemailer = require("nodemailer");
-
 const app = express();
-app.use(cors());
-app.use(express.json());
-app.use("/", router);
-app.listen(process.env.PORT || 5000, () => console.log("server Listening"));
+const publicPath = path.join(__dirname, ".", "public");
+const port = process.env.PORT || 3000;
+app.use(express.static(publicPath));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(publicPath, "index.html"));
+});
+app.listen(port, () => {
+  console.log("Server is up!");
+});
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
