@@ -91,7 +91,7 @@ function ServiceVendors() {
         <ul className="grid grid-cols-3 gap-2 justify-items-center">
           {vendorList.map((vendor) => (
             <li key={vendor.email}>
-              <div className="bg-white p-4">
+              <div className="bg-blue p-4">
                 <div className="flex justify-center">
                   <img
                     src={vendor.image}

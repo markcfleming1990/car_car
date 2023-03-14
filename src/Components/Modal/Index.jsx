@@ -14,7 +14,7 @@ function Modal(props) {
             Close
           </button>
           <button
-            className="text-gold bg-gold py-2 px-4 rounded-lg"
+            className="text-blue bg-gold py-2 px-4 rounded-lg"
             onClick={() => {
               // Replace this with your own donate logic
               console.log("Donate button clicked!");

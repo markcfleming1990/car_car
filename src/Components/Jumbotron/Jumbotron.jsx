@@ -20,7 +20,7 @@ function Jumbotron() {
           <button className="rounded-full py-3 px-8 bg-gold text-blue hover:bg-opacity-80 transition-colors duration-300">
             Request Information
           </button>
-          <button className="rounded-full py-3 px-8 border-2 bg-gold text-blue hover:text-white hover:bg-green transition-colors duration-300">
+          <button className="rounded-full py-3 px-8 border-2 bg-gold text-blue hover:text-gold hover:bg-green transition-colors duration-300">
             Donate
           </button>
         </div>
