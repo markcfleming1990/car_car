@@ -3,7 +3,7 @@ module.exports = {
   important: true,
   content: [
     "./src/pages/**/*.{jsx,js}",
-    "./src/components/**/*.{jsx,js}",
+    "./src/Components/**/*.{jsx,js}",
     "./public/index.html",
   ],
   theme: {
