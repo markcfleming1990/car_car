@@ -28,32 +28,32 @@ function Footer() {
 
   return (
     <div className="w-screen">
-      <footer className="grid grid-cols-3 gap-2 content-start bg-green p-8 text-gold">
-        <div className="text-2xl mb-4 text-center">
+      <footer className="grid grid-cols-1 md:grid-cols-3 gap-2 bg-green p-8 text-gold">
+        <div className="text-center">
           <h1 className="text-3xl mb-4">Contact Us</h1>
           <form ref={form} onSubmit={sendEmail}>
-            <label className=" mb-2">
+            <label className="block mb-2">
               <span className="text-blue">Full Name</span>
               <input
                 type="text"
-                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                className="mt-1 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="John Doe"
                 name="fullName"
               />
             </label>
-            <label className=" mb-2">
+            <label className="block mb-2">
               <span className="text-blue">Email address</span>
               <input
                 type="email"
-                className="mt-1  w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                className="mt-1 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 placeholder="john@example.com"
                 name="emailAddress"
               />
             </label>
-            <label className="mb-2">
+            <label className="block mb-2">
               <span className="text-blue">Additional details</span>
               <textarea
-                className="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                className="mt-1 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 rows="3"
                 placeholder="Place questions here"
                 name="message"
@@ -61,7 +61,7 @@ function Footer() {
             </label>
             <button
               className="rounded bg-blue py-2 px-4 mt-2"
-              type="Submit"
+              type="submit"
               value="Send"
             >
               Submit
@@ -73,17 +73,17 @@ function Footer() {
           <h1 className="text-3xl mb-4">Menu</h1>
           <nav>
             <ul className="text-blue grid grid-rows-4 gap-2 text-2xl">
-              <NavLink to="/about">About Us</NavLink>
-              <NavLink to="/partners">Partners</NavLink>
-              <NavLink to="/resources">Resources</NavLink>
-              <NavLink to="/team">Meet Our Team</NavLink>
+              <li><NavLink to="/about">About Us</NavLink></li>
+              <li><NavLink to="/partners">Partners</NavLink></li>
+              <li><NavLink to="/resources">Resources</NavLink></li>
+              <li><NavLink to="/team">Meet Our Team</NavLink></li>
             </ul>
           </nav>
         </div>
 
-        <div>
-          <h1 className="text-3xl mb-4 text-center">Senior Resource Network</h1>
-          <div className="text-blue text-center text-2xl">
+        <div className="text-center">
+          <h1 className="text-3xl mb-4">Senior Resource Network</h1>
+          <div className="text-blue text-2xl">
             <p>1657 Commerce Dr Suite 7B3</p>
             <p>South Bend, IN 46628</p>
             <p>seniorresourcenet@gmail.com</p>
