@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 // import Maria from "../Assets/img/Maria_Team.png";
+import Karen from "../Assets/img/Karen.png";
 
 function ServiceVendors() {
   const location = useLocation();
@@ -37,12 +38,14 @@ function ServiceVendors() {
       // },
     ],
     Legal: [
-      // {
-      //   name: "Legal Vendor 1",
-      //   phone: "555-1234",
-      //   email: "legal1@example.com",
-      //   image: "https://via.placeholder.com/150",
-      // },
+      {
+        name: "Karen Winkle-Goslin",
+        businessName:"LegalShield",
+        phone: "845-430-5473",
+        email: "karenwinkle2@gmail.com",
+        link:"https://www.legalshield.com/",
+        image: Karen
+      },
       // {
       //   name: "Legal Vendor 2",
       //   phone: "555-5678",
@@ -101,9 +104,17 @@ function ServiceVendors() {
                     className="w-32 h-32 object-cover rounded-full mb-2"
                   />
                 </div>
-                <h2 className="text-gold mt-2">{vendor.name}</h2>
-                <p className="text-gold">{vendor.phone}</p>
-                <p className="text-gold">{vendor.email}</p>
+                <div className="text-gold text-center mt-4">
+                <h2 className="mt-2">{vendor.name}</h2>
+                <p>{vendor.businessName}</p>
+                <p>{vendor.phone}</p>
+                <p>{vendor.email}</p>
+                <a href={vendor.link}>
+                  <button className="bg-green text-gold border-full rounded p-2">
+                    Visit Our Website
+                  </button>
+                </a>
+                </div>
               </div>
             </li>
           ))}
