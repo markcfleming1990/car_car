@@ -39,11 +39,11 @@ function ServiceVendors() {
     ],
     Legal: [
       {
-        name: "Karen Winkle-Goslin",
+        name: "Karen Winkle-Gorsline",
         businessName:"LegalShield",
         phone: "845-430-5473",
         email: "karenwinkle2@gmail.com",
-        link:"https://www.legalshield.com/",
+        link:"https://checkout.ladiesofjustice.com/karenwinklegorsline?source=backoffice",
         image: Karen
       },
       // {
