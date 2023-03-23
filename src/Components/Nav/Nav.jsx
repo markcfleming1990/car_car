@@ -12,7 +12,7 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between flex-wrap bg-blue text-gold p-6 shadow-lg w-screen">
+    <div className="flex items-center justify-between flex-wrap bg-blue text-gold p-6 shadow-2xl w-screen">
       <Link to="/">
         <h1 className="text-2xl font-bold">Senior Resource Network</h1>
       </Link>
@@ -37,8 +37,8 @@ const Nav = () => {
       >
         <HiMenu className="text-gold cursor-pointer" />
         <ul
-          className={`md:flex md:items-center justify-start md:pb-0 pb-12 absolute md:static md: z-10 right-[-30px] top[-20px] w-auto md:w-auto md:pl-0 transition-all duration-500 ease-in ${
-            open ? "bg-blue top-5 right-6 w-full" : "top-[-490px]"
+          className={`md:flex md:items-center justify-start md:pb-0 pb-12 absolute md:static md: z-10 right-[60px] top[-20px] w-auto md:w-auto md:pl-0 transition-all duration-500 ease-in ${
+            open ? "top-5 right-12 w-full" : "top-[-490px]"
           }`}
         >
           {navigationLinks.map((link) => (

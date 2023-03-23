@@ -86,15 +86,15 @@ function ServiceVendors() {
   const vendorList = vendors[service];
 
   return (
-    <div className="bg-blue">
-      <h1 className="text-gold font-bold text-2xl text-center">
+    <div className="bg-blue text-center">
+      <h1 className="text-gold font-bold text-2xl pr-8">
         Vendors for {service}
       </h1>
       {vendorList ? (
-        <ul className="grid grid-cols-3 gap-2 justify-items-center">
+        <ul className="grid grid-rows-3 grid-flow-row pr-12 md:grid-cols-3 pl-96 pt-16">
           {vendorList.map((vendor) => (
             <li key={vendor.email}>
-              <div className="bg-blue p-4">
+              <div className="bg-blue p-8">
                 <div className="flex justify-center">
                   <img
                     src={vendor.image}
