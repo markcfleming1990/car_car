@@ -25,7 +25,7 @@ function Donation() {
   const secondChancePoints = ["Empowerment & Employment", "Food", "Housing"];
 
   return (
-    <div className="grid grid-cols-2 px-8 py-6 md:px-16 md:py-12 bg-blue text-gold">
+    <div className="grid grid-cols-2 px-8 py-6 md:px-16 md:py-12 bg-blue text-gold w-screen w-screen-sm">
       <div className="flex flex-col justify-center">
         <h1 className="text-4xl font-bold leading-tight mb-4">
           We at Senior Resources Network have a variety of funds to help our

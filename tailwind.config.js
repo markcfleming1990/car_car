@@ -13,10 +13,10 @@ module.exports = {
       green: "#00843D",
     },
     screens: {
-      sm: "300px",
+      sm: "320px",
       // => @media (min-width: 640px) { ... }
 
-      md: "768px",
+      md: "660px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",

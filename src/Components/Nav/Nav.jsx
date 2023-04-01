@@ -33,12 +33,12 @@ const Nav = () => {
 
       <div
         onClick={() => setOpen(!open)}
-        className="text-3xl absolute right-8 top-6 lg:hidden"
+        className="text-3xl absolute right-2 top-6 md:hidden"
       >
         <HiMenu className="text-gold cursor-pointer" />
         <ul
           className={`md:flex md:items-center justify-start md:pb-0 pb-12 absolute md:static md: z-10 right-[60px] top[-20px] w-auto md:w-auto md:pl-0 transition-all duration-500 ease-in ${
-            open ? "top-5 right-12 w-full" : "top-[-490px]"
+            open ? "bg-blue h-[270px] top-10 right-[-33px] w-[120px]" : "top-[-490px]"
           }`}
         >
           {navigationLinks.map((link) => (

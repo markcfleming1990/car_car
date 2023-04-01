@@ -27,8 +27,8 @@ function Footer() {
   };
 
   return (
-    <div className="w-screen">
-      <footer className="grid grid-cols-1 md:grid-cols-3 gap-2 bg-green p-8 text-gold">
+    <div className="w-screen max-w-screen-md">
+      <footer className="grid grid-cols-1 md:grid-cols-3 gap-2 bg-green p-8 text-gold w-screen">
         <div className="text-center">
           <h1 className="text-3xl mb-4">Contact Us</h1>
           <form ref={form} onSubmit={sendEmail}>
@@ -51,7 +51,7 @@ function Footer() {
               />
             </label>
             <label className="block mb-2">
-              <span className="text-blue">Additional details</span>
+              <span className="text-blue">Comments or Questions</span>
               <textarea
                 className="mt-1 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                 rows="3"
@@ -83,7 +83,7 @@ function Footer() {
 
         <div className="text-center">
           <h1 className="text-3xl mb-4">Senior Resource Network</h1>
-          <div className="text-blue text-2xl">
+          <div className="text-blue text-1xl lg:text-2xl">
             <p>1657 Commerce Dr Suite 7B3</p>
             <p>South Bend, IN 46628</p>
             <p>seniorresourcenet@gmail.com</p>

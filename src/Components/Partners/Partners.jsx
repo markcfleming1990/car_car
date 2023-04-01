@@ -12,7 +12,7 @@ function Partners() {
   ];
 
   return (
-    <div className="py-20 bg-blue text-gold">
+    <div className="py-20 bg-blue text-gold w-screen">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2">
