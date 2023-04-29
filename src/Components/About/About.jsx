@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-blue text-gold py-16 w-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-blue text-gold py-16 max-w-[1640px] mx-auto">
+      <div className=" px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Our Mission</h1>
         </div>

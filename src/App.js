@@ -32,7 +32,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         {/* <Route path="/vendors" element={<Vendors />} /> */}
         {/* Add a new route that will display the vendors for a specific service */}
-        <Route path="/service-vendors" element={<ServiceVendors />} />
+        <Route path="/service-vendors/category" element={<ServiceVendors />} />
       </Routes>
       <Footer />
     </div>

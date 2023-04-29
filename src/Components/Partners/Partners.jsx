@@ -1,49 +1,89 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Personal from "../../Assets/img/personal.png";
+import Personal from "../../Assets/img/life_planning.png";
+import Medic from "../../Assets/img/medicOver.jpg";
+import Legal from "../../Assets/img/Legal_Grid.png";
+import Financial from "../../Assets/img/Financial.jpg";
+import HomeAuto from "../../Assets/img/home_auto.png";
 
 function Partners() {
-  const services = [
-    { name: "Medical", id: "Medical" },
-    { name: "Financial", id: "Financial" },
-    { name: "Legal", id: "Legal" },
-    { name: "Home & Auto", id: "HomeAuto" },
-    { name: "Personal", id: "Personal" },
-  ];
-
   return (
-    <div className="py-20 bg-blue text-gold w-screen">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="lg:w-1/2">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">
-              Our Local Professional Services:
-            </h1>
-            <ul className="text-2xl md:text-3xl space-y-2 md:space-y-4">
-              {services.map((service) => (
-                <li key={service.id}>
-                  {/* Pass the selected service as a query parameter */}
-                  <Link
-                    to={{
-                      pathname: "/service-vendors",
-                      search: `?service=${service.id}`,
-                    }}
-                    className="underline hover:no-underline"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="lg:w-1/2 mt-8 lg:mt-0">
-            <img
-              src={Personal}
-              className="w-full h-auto object-cover rounded-lg shadow-lg"
-              alt="Grandfather with grandson"
-            />
-          </div>
+    <div className="max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6">
+      {/* Cards */}
+      <div className="rounded-xl relative bg-blue cursor-pointer hover:scale-105 duration-300">
+        {/* Overlay */}
+        <div className="absolute w-full h-full rounded-xl bg-blue/40 ">
+          <p className="font-bold text-3xl px-2 pt-4 text-gold">Medical</p>
+          <Link to={`/serviceVendors/Medical`}>
+            <button className="border-blue rounded-full p-2 border-2 text-gold mx-2 absolute bottom-4">
+              Learn More
+            </button>
+          </Link>
         </div>
+        <img
+          className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+          src={Medic}
+          alt="/"
+        />
+      </div>
+      <div className="rounded-xl relative bg-blue cursor-pointer hover:scale-105 duration-300">
+        {/* Overlay */}
+        <div className="absolute w-full h-full rounded-xl bg-blue/40 ">
+          <p className="font-bold text-3xl px-2 pt-4 text-gold">Financial</p>
+          <button className="border-blue rounded-full p-2 border-2 text-gold mx-2 absolute bottom-4">
+            Learn More
+          </button>
+        </div>
+        <img
+          className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+          src={Financial}
+          alt="/"
+        />
+      </div>
+
+      <div className="rounded-xl relative bg-blue cursor-pointer hover:scale-105 duration-300">
+        {/* Overlay */}
+        <div className="absolute w-full h-full rounded-xl bg-blue/40 ">
+          <p className="font-bold text-3xl px-2 pt-4 text-gold">Legal</p>
+          <button className="border-blue rounded-full p-2 border-2 text-gold mx-2 absolute bottom-4">
+            Learn More
+          </button>
+        </div>
+        <img
+          className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+          src={Legal}
+          alt="/"
+        />
+      </div>
+
+      <div className="rounded-xl relative bg-blue cursor-pointer hover:scale-105 duration-300">
+        {/* Overlay */}
+        <div className="absolute w-full h-full rounded-xl bg-blue/40 ">
+          <p className="font-bold text-3xl px-2 pt-4 text-gold">Home & Auto</p>
+          <button className="border-blue rounded-full p-2 border-2 text-gold mx-2 absolute bottom-4">
+            Learn More
+          </button>
+        </div>
+        <img
+          className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+          src={HomeAuto}
+          alt="/"
+        />
+      </div>
+
+      <div className="rounded-xl relative bg-blue cursor-pointer hover:scale-105 duration-300">
+        {/* Overlay */}
+        <div className="absolute w-full h-full rounded-xl bg-blue/40 ">
+          <p className="font-bold text-3xl px-2 pt-4 text-gold">Personal</p>
+          <button className="border-blue rounded-full p-2 border-2 text-gold mx-2 absolute bottom-4">
+            Learn More
+          </button>
+        </div>
+        <img
+          className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+          src={Personal}
+          alt="/"
+        />
       </div>
     </div>
   );
